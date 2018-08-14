@@ -23,6 +23,7 @@ void copy(char from[], char to[]){
     to[i]=from[i];
     i++;
   }
+  return;
 }
 
 int main(){

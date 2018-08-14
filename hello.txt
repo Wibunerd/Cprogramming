@@ -1,0 +1,3 @@
+Pass by value only pass the value of the variable and does not store the result in that variable later on.
+Pass by reference passes the whole address of the variable in (pointer) which means that the value will be stored in the pointer later on
+Note that an array with no value is a pointer or some sort I guess??
