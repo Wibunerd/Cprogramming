@@ -1,4 +1,4 @@
-/* This is the program that solve quadratic equation
+/* This is the program that solve a quadratic equation
   imaginary roots will not be included
 */
 #include <stdio.h>
@@ -8,9 +8,8 @@ int main(){
   float a,b,c,d,root1,root2;
 
   printf("Enter a, b and c in the form ax^2 + bx + c\n");
-
+//get input from user
   printf("Enter a\n");
-  
   if(scanf("%f", &a)==0){
     printf("Enter numbers only\n");
   }else {
@@ -25,7 +24,7 @@ int main(){
         printf("Enter numbers only\n");
     }else{
       d = b*b-4*a*c;//calculate delta
-
+        //check for special cases
       if(a==0){
          if(b==0){
             printf("There are no roots");
@@ -34,7 +33,7 @@ int main(){
              printf("The equation has one root: %f", root1);
              }
       }else{
-        if(d<0){
+        if(d<0){      //check delta
          printf("There are no real roots");
          
          }else if(d==0){
